@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_data_of_this_product"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvInfo"
+        app:layout_constraintEnd_toEndOf="@+id/tvInfo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvInfo" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:background="#368BFF04"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/edEditName"
+        app:layout_constraintEnd_toEndOf="@+id/edEditName"
+        app:layout_constraintStart_toStartOf="@+id/edEditName" />
+
+    <EditText
+        android:id="@+id/edEditName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:inputType="textEmailAddress|textNoSuggestions"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edEditPrice"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/edEditPrice"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edEditPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/price"
+        android:inputType="textEmailAddress|textNoSuggestions"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnSaveChanges"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnSaveChanges"
+        app:layout_constraintTop_toBottomOf="@+id/edEditName" />
+
+    <Button
+        android:id="@+id/btnSaveChanges"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/save_changes"
+        app:layout_constraintEnd_toEndOf="@+id/btnCancel"
+        app:layout_constraintStart_toStartOf="@+id/btnCancel"
+        app:layout_constraintTop_toBottomOf="@+id/edEditPrice" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaveChanges" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

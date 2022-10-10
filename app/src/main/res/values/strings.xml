@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RoomVModelRcViewFragments</string>
+    <string name="save">Save</string>
+    <string name="price">Price</string>
+    <string name="name">Name</string>
+    <string name="change">Change</string>
+    <string name="delete">Delete</string>
+    <string name="clear_all">Clear All</string>
+    <string name="edit_data_of_this_product">Edit data of this product</string>
+    <string name="cancel">Cancel</string>
+    <string name="save_changes">Save Changes</string>
+</resources>
